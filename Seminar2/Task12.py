@@ -1,7 +1,7 @@
 from random import randint
 from math import sqrt
 
-x, y = randint(1, 10), randint(1, 10)
+x, y = randint(1, 1000), randint(1, 1000)
 sum, comp = x + y, x * y
 
 desc = sum * sum - 4 * comp # находим дискриминант
