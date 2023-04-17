@@ -1,8 +1,10 @@
 file_dir = 'seminar8/tel.txt'
 field = ["Имя контактактк: ", "Номер телефона: ", "Коментарий: "]
 
+
 def contact_format(contact):
     return ' '.join(contact.split(';'))
+
 
 def show_all():
     with open(file_dir, 'r', encoding="UTF-8") as f:
@@ -31,6 +33,7 @@ def search(data):
 
     return [count, search_request, index]
 
+
 def delete_record():
         with open(file_dir, 'r', encoding='UTF-8') as f:
             data = f.readlines()
@@ -48,6 +51,7 @@ def delete_record():
             delete_record()
         else:
             print("По запросу ничего не найдено")
+
 
 def edit_record():
     with open(file_dir, 'r', encoding="UTF-8") as f:
@@ -70,7 +74,6 @@ def edit_record():
         edit_record()
     else:
         print("По запросу ничего не найдено")
-
 
 
 def search_record():
